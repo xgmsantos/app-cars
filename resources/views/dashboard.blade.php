@@ -22,8 +22,13 @@
                 <div class="content">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-12">
-                                <p>O conteúdo do dashboard será mostrado aqui.</p>
+                            <div class="col-lg-4">
+                                <div class="card text-white bg-success mb-3">
+                                    <div class="card-header">Quantidade de carros cadastrados no sistema</div>
+                                    <div class="card-body">
+                                        <h3 class="pt-2">{{ $cars }}</h3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

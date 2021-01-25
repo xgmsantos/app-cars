@@ -24,15 +24,17 @@
         </nav>
 
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
-            <a href="<?= url('/dashboard') ?>" class="brand-link">
+            <a href="{{ route('dashboard') }}" class="brand-link">
                 <span class="d-block brand-text font-weight-light py-2">App Cars | Admin</span>
             </a>
 
             <div class="sidebar">
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
                         <li class="nav-item">
-                            <a href="<?= url('/dashboard') ?>" class="nav-link {{ Route::is('dashboard') ? 'active' : '' }}">
+                            <a href="{{ route('dashboard') }}"
+                                class="nav-link {{ Route::is('dashboard') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -50,15 +52,15 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="<?= url('/carros/adicionar-novo') ?>" class="nav-link {{ Route::is('cars.add') ? 'active' : '' }}">
+                                    <a href="{{ route('cars.create') }}"
+                                        class="nav-link {{ Route::is('cars.create') ? 'active' : '' }}" class="nav-link">
                                         <i class="fas fa-plus nav-icon"></i>
                                         <p>Adicionar Novo</p>
                                     </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="{{ route('cars.index') }}"
+                                        class="nav-link {{ Route::is('cars.index') ? 'active' : '' }}" class="nav-link">
                                         <i class="fas fa-list nav-icon"></i>
-                                        <p>Ver Carros</p>
+                                        <p>Detalhamento</p>
                                     </a>
                                 </li>
                             </ul>

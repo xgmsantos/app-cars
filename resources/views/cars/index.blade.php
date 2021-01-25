@@ -42,7 +42,7 @@
                                             <thead>
                                                 <tr>
                                                     <th scope="col">Marca</th>
-                                                    <th scope="col">Nome</th>
+                                                    <th scope="col">Modelo</th>
                                                     <th scope="col">Cor</th>
                                                     <th scope="col">Placa</th>
                                                     <th scope="col"></th>

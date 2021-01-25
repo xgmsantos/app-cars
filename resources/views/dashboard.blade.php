@@ -1,5 +1,7 @@
 @extends('master.master')
 
+@section('title', 'Dashboard | App Cars')
+
 @section('content')
     <div class="content-wrapper">
         <div class="content-header">
